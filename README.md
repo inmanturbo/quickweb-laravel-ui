@@ -39,7 +39,7 @@ Same as above but also brings in vue (appends laravel ui vue)
 Same as above but with react in place of vue.
 
 
-``php artisan preset quickweb-vue``
+``php artisan preset quickweb-react``
 ``npm install``
 ``npm run dev``
 
