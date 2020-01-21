@@ -3,7 +3,7 @@ The default quickweb Laravel preset, requires laravel ui ^1.1
 
 ## Warning!
 
-Npm will give you a warning when comiling for development. This is because all of bootstrap is being compiled inside a parent 
+Npm will give you a warning when compiling for development. This is because all of bootstrap is being compiled inside a parent 
 class, include the comment block. It will stil work.  
 
 This package brings in a lot of dependancies you may not need. It does however isolate major css materilize and bootstrap 
