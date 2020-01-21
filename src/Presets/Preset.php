@@ -28,7 +28,6 @@ class Preset extends LaravelUiPreset
             'popper.js' => '^1.12',
             '@fortawesome/fontawesome-free' => '^5.12.0',
             'materialize-css' => '^1.0.0-rc.2',
-            'material-design-icons' => '^3.0.1',
             'material-icons' => '^0.3.1',
             '@neos21/bootstrap3-glyphicons' => '^1.0.4',
             'codemirror' => '^5.49.0',
