@@ -11,7 +11,7 @@ let publicPath = "public/";
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+mix.copyDirectory("vendor/ckeditor", publicPath + "components/ckeditor");
 mix.copyDirectory("node_modules/codemirror", publicPath + "components/codemirror");
 mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "components/jquery-colorbox");
 mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "components/jquery-contexmenu");
