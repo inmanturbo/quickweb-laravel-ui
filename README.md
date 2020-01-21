@@ -13,4 +13,4 @@ to seperate classes.  Bootstrap will only work inside a parent element with a cl
 Don't defer loading of app.js. Takes about a  10th of a millisecond longer to load than a blade template, 
 and you will get $ is not defined if you attempt to use jquery.
 
-This preset is meant for large projects across multiple platforms, and will need to be pruned quite a bit as your project goes on.
+This preset is meant for large projects across multiple platforms, and  your packages will need to be pruned quite a bit as your project goes on.
