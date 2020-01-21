@@ -28,12 +28,13 @@ along will several jquery plugins like datatable etc will be found under a new d
 `npm run dev`
 
 Same as above but also brings in vue (appends laravel ui vue)
-`php artisan preset quickweb-vue`
-`npm install`
-`npm run dev`
+
+``php artisan preset quickweb-vue``
+``npm install``
+``npm run dev``
 
 Same as above but with react in place of vue.
-`php artisan preset quickweb-vue`
-`npm install`
-`npm run dev`
+``php artisan preset quickweb-vue``
+``npm install``
+``npm run dev``
 
