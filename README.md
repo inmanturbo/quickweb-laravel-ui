@@ -4,7 +4,7 @@ The default quickweb Laravel preset, requires laravel ui ^1.1
 ## Warning!
 
 Npm will give you a warning when compiling for development. This is because all of bootstrap is being compiled inside a parent 
-class, include the comment block. It will stil work.  
+class, include the comment block. It will still work.  
 
 This package brings in a lot of dependancies you may not need. It does however isolate major css materilize and bootstrap 
 to seperate classes.  Bootstrap will only work inside a parent element with a class of .bstrap4-iso . Materialize inside the class
