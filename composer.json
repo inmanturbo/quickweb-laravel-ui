@@ -1,0 +1,34 @@
+{
+    "name": "inmanturbo/quickweb-laravel-preset",
+    "description": "The default quickweb Laravel preset, requires laravel ui",
+    "keywords": [
+        "laravel",
+        "laravel preset",
+        "laravel ui",
+        "quickweb"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "inmanturbo",
+            "email": "inman.turbo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Quickweb\\Ui\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quickweb\\Ui\\UiServiceProvider"
+            ]
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "laravel/ui": "^1.1"
+    }
+}

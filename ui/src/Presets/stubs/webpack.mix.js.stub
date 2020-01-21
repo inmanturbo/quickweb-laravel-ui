@@ -1,0 +1,39 @@
+const mix = require('laravel-mix');
+mix.setPublicPath('public/');
+
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
+
+mix.copy("node_modules/codemirror", "components/codemirror");
+mix.copy("node_modules/jquery-colorbox", "components/jquery-colorbox");
+mix.copy("node_modules/jquery-contextmenu", "components/jquery-contexmenu");
+mix.copy("node_modules/datatables.net", "components/datatables.net");
+mix.copy("node_modules/datatables.net-autofill", "components/datatables.net-autofill");
+mix.copy("node_modules/datatables.net-autofill-bs4", "components/datatables.net-autofill-bs4");
+mix.copy("node_modules/datatables.net-bs4", "components/datatables.net-bs4");
+mix.copy("node_modules/datatables.net-buttons", "components/datatables.net-buttons");
+mix.copy("node_modules/datatables.net-colreorder", "components/datatables.net-colreorder");
+mix.copy("node_modules/datatables.net-colreorder-dt", "components/datatables.net-colreorder-dt");
+mix.copy("node_modules/datatables.net-dt", "components/datatables.net-dt");
+mix.copy("node_modules/datatables.net-fixedcolumns", "components/datatables.net-fixedcolumns");
+mix.copy("node_modules/datatables.net-keytable", "components/datatables.net-keytable");
+mix.copy("node_modules/datatables.net-responsive", "components/datatables.net-responsive");
+mix.copy("node_modules/datatables.net-rowgroup", "components/datatables.net-rowgroup");
+mix.copy("node_modules/datatables.net-scroller", "components/datatables.net-scroller");
+mix.copy("node_modules/datatables.net-searchpanes", "components/datatables.net-searchpanes");
+mix.copy("node_modules/datatables.net-select", "components/datatables.net-select");
+mix.copy("node_modules/jexcel", "components/jexcel");
+mix.copy("node_modules/select2", "components/select2");
+mix.copy("node_modules/@fortawesome/fontawesome-free/", "css/icons/font-awesome");
+mix.copy("node_modules/material-icons/iconfont", "css/icons/material-icons");
+
+mix.js('resources/js/app.js', 'js')
+    .sass('resources/sass/app.scss', 'css');

@@ -1,0 +1,18 @@
+global._ = require('lodash');
+
+try {
+    global.Popper = require('popper.js').default;
+    global.$ = global.jQuery = require('jquery');
+
+    require('bootstrap');
+    require('materialize-css');
+    require('@fortawesome/fontawesome-free/js/all.js');
+} catch (e) {
+    
+}
+
+
+global.axios = require('axios');
+
+global.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
