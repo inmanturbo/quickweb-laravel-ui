@@ -2,9 +2,9 @@
 
 namespace Quickweb\Ui\Presets;
 
-use Laravel\Ui\Presets\Preset as LaravelUIPreset;
+use Laravel\Ui\Presets\Preset as LaravelUiPreset;
 
-class Preset extends LaravelUIPreset
+class Preset extends LaravelUiPreset
 {
     /**
      * Install the preset.
