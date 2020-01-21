@@ -14,3 +14,26 @@ Don't defer loading of app.js. Takes about a  10th of a millisecond longer to lo
 and you will get $ is not defined if you attempt to use jquery.
 
 This preset is meant for large projects across multiple platforms, and  your packages will need to be pruned quite a bit as your project goes on.
+
+## Installation
+
+`composer require inmanturbo/quickweb-laravel-preset`
+
+## Usage
+
+Bootstraps bootstrap materialize and jquery, as well as fontawesome free and material-icons
+along will several jquery plugins like datatable etc will be found under a new directory in your public folder "public/components"
+`php artisan preset quickweb-bootstrap`
+`npm install`
+`npm run dev`
+
+Same as above but also brings in vue (appends laravel ui vue)
+`php artisan preset quickweb-vue`
+`npm install`
+`npm run dev`
+
+Same as above but with react in place of vue.
+`php artisan preset quickweb-vue`
+`npm install`
+`npm run dev`
+
