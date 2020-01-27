@@ -34,6 +34,7 @@ class Preset extends LaravelUiPreset
             'jexcel' => '^3.6.2',
             'jquery-colorbox' => '^1.6.4',
             'jquery-contextmenu' => '^2.9.0',
+            'jquery-slimscroll' => '^1.3.8',
             'select2' => '^4.0.12',
             'datatables.net' => '^1.10.20',
             'datatables.net-dt'  => '^1.10.20',
