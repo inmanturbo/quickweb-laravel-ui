@@ -91,5 +91,8 @@ class Preset extends LaravelUiPreset
     {
         copy(__DIR__ . '/stubs/app.js.stub', resource_path('js/app.js'));
         copy(__DIR__ . '/stubs/bootstrap.js.stub', resource_path('js/bootstrap.js'));
+        copy(__DIR__ . '/stubs/bootstrap4.js.stub', resource_path('js/bootstrap4.js'));
+        copy(__DIR__ . '/stubs/fontawesome-free.js.stub', resource_path('js/fontawesome-free.js'));
+        copy(__DIR__ . '/stubs/materialize-css.js.stub', resource_path('js/materialize-css.js'));
     }
 }
