@@ -38,6 +38,6 @@ mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", "css/icons/font
 mix.copyDirectory("node_modules/material-icons/iconfont", "css/icons/material-icons");
 
 mix.js(jsArr, 'js')
-    .sass('resources/sass/materialize.scss' 'css')
-    .sass('resources/sass/bootstrap.scss' 'css');
+    .sass('resources/sass/materialize.scss', 'css')
+    .sass('resources/sass/bootstrap.scss', 'css');
    
