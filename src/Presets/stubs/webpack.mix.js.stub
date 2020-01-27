@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
-let publicPath = "public/";
+//let publicPath = "public/";
+mix.setPublicPath(('public/'))
 
 /*
  |--------------------------------------------------------------------------
@@ -11,29 +12,30 @@ let publicPath = "public/";
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.copyDirectory("vendor/ckeditor", publicPath + "components/ckeditor");
-mix.copyDirectory("node_modules/codemirror", publicPath + "components/codemirror");
-mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "components/jquery-colorbox");
-mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "components/jquery-contexmenu");
-mix.copyDirectory("node_modules/datatables.net", publicPath + "components/datatables.net");
-mix.copyDirectory("node_modules/datatables.net-autofill", publicPath + "components/datatables.net-autofill");
-mix.copyDirectory("node_modules/datatables.net-autofill-bs4", publicPath + "components/datatables.net-autofill-bs4");
-mix.copyDirectory("node_modules/datatables.net-bs4", publicPath + "components/datatables.net-bs4");
-mix.copyDirectory("node_modules/datatables.net-buttons", publicPath + "components/datatables.net-buttons");
-mix.copyDirectory("node_modules/datatables.net-colreorder", publicPath + "components/datatables.net-colreorder");
-mix.copyDirectory("node_modules/datatables.net-colreorder-dt", publicPath + "components/datatables.net-colreorder-dt");
-mix.copyDirectory("node_modules/datatables.net-dt", publicPath + "components/datatables.net-dt");
-mix.copyDirectory("node_modules/datatables.net-fixedcolumns", publicPath + "components/datatables.net-fixedcolumns");
-mix.copyDirectory("node_modules/datatables.net-keytable", publicPath + "components/datatables.net-keytable");
-mix.copyDirectory("node_modules/datatables.net-responsive", publicPath + "components/datatables.net-responsive");
-mix.copyDirectory("node_modules/datatables.net-rowgroup", publicPath + "components/datatables.net-rowgroup");
-mix.copyDirectory("node_modules/datatables.net-scroller", publicPath + "components/datatables.net-scroller");
-mix.copyDirectory("node_modules/datatables.net-searchpanes", publicPath + "components/datatables.net-searchpanes");
-mix.copyDirectory("node_modules/datatables.net-select", publicPath + "components/datatables.net-select");
-mix.copyDirectory("node_modules/jexcel", publicPath + "components/jexcel");
-mix.copyDirectory("node_modules/select2", publicPath + "components/select2");
-mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
-mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
+mix.copyDirectory("vendor/ckeditor", "components/ckeditor");
+mix.copyDirectory("node_modules/codemirror", "components/codemirror");
+mix.copyDirectory("node_modules/jquery-colorbox", "components/jquery-colorbox");
+mix.copyDirectory("node_modules/jquery-contextmenu", "components/jquery-contexmenu");
+mix.copyDirectory("node_modules/datatables.net", "components/datatables.net");
+mix.copyDirectory("node_modules/datatables.net-autofill", "components/datatables.net-autofill");
+mix.copyDirectory("node_modules/datatables.net-autofill-bs4", "components/datatables.net-autofill-bs4");
+mix.copyDirectory("node_modules/datatables.net-bs4", "components/datatables.net-bs4");
+mix.copyDirectory("node_modules/datatables.net-buttons", "components/datatables.net-buttons");
+mix.copyDirectory("node_modules/datatables.net-colreorder", "components/datatables.net-colreorder");
+mix.copyDirectory("node_modules/datatables.net-colreorder-dt", "components/datatables.net-colreorder-dt");
+mix.copyDirectory("node_modules/datatables.net-dt", "components/datatables.net-dt");
+mix.copyDirectory("node_modules/datatables.net-fixedcolumns", "components/datatables.net-fixedcolumns");
+mix.copyDirectory("node_modules/datatables.net-keytable", "components/datatables.net-keytable");
+mix.copyDirectory("node_modules/datatables.net-responsive", "components/datatables.net-responsive");
+mix.copyDirectory("node_modules/datatables.net-rowgroup", "components/datatables.net-rowgroup");
+mix.copyDirectory("node_modules/datatables.net-scroller", "components/datatables.net-scroller");
+mix.copyDirectory("node_modules/datatables.net-searchpanes", "components/datatables.net-searchpanes");
+mix.copyDirectory("node_modules/datatables.net-select", "components/datatables.net-select");
+mix.copyDirectory("node_modules/jexcel", "components/jexcel");
+mix.copyDirectory("node_modules/select2", "components/select2");
+mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", "css/icons/font-awesome");
+mix.copyDirectory("node_modules/material-icons/iconfont", "css/icons/material-icons");
 
 mix.js('resources/js/app.js', 'js')
-    .sass('resources/sass/app.scss', 'css');
+    .sass('resources/sass/bootstrap.scss', 'css');
+    .sass('resources/sass/materialize.scss', 'css');
