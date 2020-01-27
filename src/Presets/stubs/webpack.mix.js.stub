@@ -1,7 +1,8 @@
 const mix = require('laravel-mix');
 //let publicPath = "public/";
 mix.setPublicPath('public/');
-let jsArr   = ['resources/js/app.js','resources/js/bootstrap4.js','resources/js/materialize-css.js', 'fontawesome-free.js'];
+let jsArr   = ['resources/js/app.js','resources/js/bootstrap4.js','resources/js/materialize-css.js', 'resources/js/fontawesome-free.js'];
+//let vendorJsArr   = [''resources/js/bootstrap4.js','resources/js/materialize-css.js', 'resources/js/fontawesome-free.js'];
 
 /*
  |--------------------------------------------------------------------------
