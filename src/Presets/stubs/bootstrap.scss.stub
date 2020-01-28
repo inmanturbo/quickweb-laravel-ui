@@ -5,15 +5,64 @@
 
     // Variables
     
-    @import 'variables';
-
+    
     // Bootstrap
     @import '~bootstrap/scss/bootstrap';
-
-
+    
+    
+    
 }
+@import 'variables';
 
     .navbar-laravel {
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
     }
+
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+      }
+    
+      .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+        text-decoration: none;
+      }
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: none;
+  }
+  
+  .nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+
+  .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
