@@ -26,7 +26,7 @@
    
 </head>
 <body>
-<!--- begin bootstrap4 ---!>
+<!--- begin bootstrap4 --->
         <div class="bstrap4-iso">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <button  id="sideMenuToggler" class="navbar-toggler sideMenuToggler" type="button">
@@ -63,7 +63,7 @@
                 </div>
               </nav>
         </div>
-<!--- end bootstrap4. All bootstrap below are just borrowed, cherry picked classes. See resources/scss/variables.css Webpack is loading bootrap inside a dedicated class (.bstrap4-iso)  :-) ---!>
+<!--- end bootstrap4. All bootstrap below are just borrowed, cherry picked classes. See resources/scss/variables.css Webpack is loading bootrap inside a dedicated class (.bstrap4-iso)  :-) --->
               <div class="wrapper d-flex active">
                   <div class="sideMenu bg-white">
                     <div class="sidebar">
@@ -134,7 +134,7 @@
                   <div class="content">
                       <main>
            
-                          <!--- content from other views will load here ---!>
+                          <!--- content from other views will load here --->
                             @yield('main')
                       
                        
