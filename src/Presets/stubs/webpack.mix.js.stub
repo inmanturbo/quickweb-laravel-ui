@@ -1,7 +1,7 @@
 const mix = require('laravel-mix');
 let publicPath = "public/";
 // mix.setPublicPath('public/');
-let jsArr = ['resources/js/app.js', 'resources/js/bootstrap4.js', 'resources/js/materialize-css.js', 'resources/js/fontawesome-free.js'];
+let jsArr = ['resources/js/script.js', 'resources/js/app.js', 'resources/js/bootstrap4.js', 'resources/js/materialize-css.js', 'resources/js/fontawesome-free.js'];
 //let vendorJsArr   = [''resources/js/bootstrap4.js','resources/js/materialize-css.js', 'resources/js/fontawesome-free.js'];
 
 /*
@@ -36,10 +36,10 @@ mix.copyDirectory("node_modules/datatables.net-searchpanes", publicPath + "vendo
 mix.copyDirectory("node_modules/datatables.net-select", publicPath + "vendor/datatables.net-select");
 mix.copyDirectory("node_modules/jexcel", publicPath + "vendor/jexcel");
 mix.copyDirectory("node_modules/select2", publicPath + "vendor/select2");
-mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", "css/icons/font-awesome");
-mix.copyDirectory("node_modules/material-icons/iconfont", "css/icons/material-icons");
+mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
+mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
 
 mix.js(jsArr, 'js')
     .sass('resources/sass/materialize.scss', 'css')
     .sass('resources/sass/bootstrap.scss', 'css');
-   
+
