@@ -13,12 +13,8 @@ let jsArr = ['resources/js/app.js', 'resources/js/bootstrap4.js', 'resources/js/
  | for your Laravel application. By default, we are compiling the Sass
  | file for the application as well as bundling up all the JS files.
  |
- */
-mix.copyDirectory("vendor/ckeditor", publicPath + "vendor/ckeditor");
+\/\/\/\/ Datatables \/\/\/\/\/ 
 mix.copyDirectory("node_modules/codemirror", publicPath + "vendor/codemirror");
-mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "vendor/jquery-colorbox");
-mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "vendor/jquery-contexmenu");
-mix.copyDirectory("node_modules/jquery-slimscroll", publicPath + "vendor/jquery-slimscroll");
 mix.copyDirectory("node_modules/datatables.net", publicPath + "vendor/datatables.net");
 mix.copyDirectory("node_modules/datatables.net-autofill", publicPath + "vendor/datatables.net-autofill");
 mix.copyDirectory("node_modules/datatables.net-autofill-bs4", publicPath + "vendor/datatables.net-autofill-bs4");
@@ -34,17 +30,42 @@ mix.copyDirectory("node_modules/datatables.net-rowgroup", publicPath + "vendor/d
 mix.copyDirectory("node_modules/datatables.net-scroller", publicPath + "vendor/datatables.net-scroller");
 mix.copyDirectory("node_modules/datatables.net-searchpanes", publicPath + "vendor/datatables.net-searchpanes");
 mix.copyDirectory("node_modules/datatables.net-select", publicPath + "vendor/datatables.net-select");
+*/
+/*
+|
+| jquery plugins
+*/
 mix.copyDirectory("node_modules/jexcel", publicPath + "vendor/jexcel");
 mix.copyDirectory("node_modules/select2", publicPath + "vendor/select2");
+mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "vendor/jquery-colorbox");
+mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "vendor/jquery-contexmenu");
+mix.copyDirectory("node_modules/jquery-slimscroll", publicPath + "vendor/jquery-slimscroll");
+
+/*
+|
+| ckeditor
+*/
+mix.copyDirectory("vendor/ckeditor", publicPath + "vendor/ckeditor");
+
+/*
+|
+| icon fonts
+*/
 mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
 mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
 
+/*
+|
+| Common (Bootstrap, Materialize, jquery :-/ fontawesome material icon js)
+*/
 mix.js(jsArr, 'js')
     .sass('resources/sass/materialize.scss', 'css')
     .sass('resources/sass/bootstrap.scss', 'css');
     
- //   mix.babel([
- //      'public/js/admin.js',
- //      'public/js/dashboard.js'
- //   ], 'public/js/all.js');
-
+ /*
+ |  To do: Write some es6, run it though babel, and eliminate jquery!
+ |   mix.babel([
+ |      'public/js/admin.js',
+ |      'public/js/dashboard.js'
+ |   ], 'public/js/all.js');
+ */
