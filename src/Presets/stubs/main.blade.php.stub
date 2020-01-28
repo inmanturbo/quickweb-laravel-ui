@@ -169,6 +169,15 @@
        */
         adjustSidebar();
         
+       /*
+        | fire the slimscroll function on windows resize
+        | https://plugins.jquery.com/slimScroll/
+       */
+       $(window).resize(function(){
+            adjustSidebar();
+       });
+       
+        
         /*
         | Toggle sidebar on click
         | and give it a shadow
