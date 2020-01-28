@@ -18,6 +18,7 @@ class Preset extends LaravelUiPreset
         static::updateScripts();
         static::removeNodeModules();
         static::updateMix();
+        static::updateViews();
     }
 
     protected static function updatePackageArray(array $packages)
@@ -81,6 +82,11 @@ class Preset extends LaravelUiPreset
         copy(__DIR__ . '/stubs/_variables.scss.stub', resource_path('sass/_variables.scss'));
         copy(__DIR__ . '/stubs/bootstrap.scss.stub', resource_path('sass/bootstrap.scss'));
         copy(__DIR__ . '/stubs/materialize.scss.stub', resource_path('sass/materialize.scss'));
+    }
+    
+        protected static function updateViews()
+    {
+        copy(__DIR__ . '/stubs/main.blade.php.stub', resource_path('views/main.blade.php'));
     }
 
     protected static function updateMix()
