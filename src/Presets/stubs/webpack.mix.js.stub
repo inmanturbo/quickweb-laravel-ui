@@ -13,7 +13,7 @@ let jsArr = ['resources/js/app.js', 'resources/js/bootstrap4.js', 'resources/js/
  | for your Laravel application. By default, we are compiling the Sass
  | file for the application as well as bundling up all the JS files.
  |
-\/\/\/\/ Datatables \/\/\/\/\/ 
+\/\/\/\/ Datatables \/\/\/\/\/ \\*
 mix.copyDirectory("node_modules/codemirror", publicPath + "vendor/codemirror");
 mix.copyDirectory("node_modules/datatables.net", publicPath + "vendor/datatables.net");
 mix.copyDirectory("node_modules/datatables.net-autofill", publicPath + "vendor/datatables.net-autofill");
