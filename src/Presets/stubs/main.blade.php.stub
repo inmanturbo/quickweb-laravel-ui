@@ -134,6 +134,7 @@
                   <div class="content">
                       <main>
            
+                          <!--- content from other views will load here ---!>
                             @yield('main')
                       
                        
