@@ -1,0 +1,14 @@
+@extends('main')
+
+@section('main')
+<div class="bstrap4-iso">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4  my-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae sequi, quaerat odio ratione excepturi omnis aliquid cumque quasi distinctio itaque natus cupiditate autem illo nobis, fugit dignissimos quis corporis enim.
+        </div>
+    </div>
+
+    </div>
+</div>
+@endsection
