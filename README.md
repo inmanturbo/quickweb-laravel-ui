@@ -22,7 +22,7 @@ This preset is meant for large projects across multiple platforms, and  your pac
 ## Usage
 
 Bootstraps bootstrap materialize and jquery, as well as fontawesome free and material-icons
-along will several jquery plugins like datatable etc will be found under a new directory in your public folder "public/components"
+along will several jquery plugins like datatable etc will be found under a new directory in your public folder "public/vendor"
 
 
 `php artisan preset quickweb-bootstrap`
