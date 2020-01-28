@@ -63,9 +63,9 @@ mix.js(jsArr, 'js')
     .sass('resources/sass/bootstrap.scss', 'css');
     
  /*
- |  To do: Write some es6, run it though babel, and eliminate jquery!
- |   mix.babel([
- |      'public/js/admin.js',
- |      'public/js/dashboard.js'
- |   ], 'public/js/all.js');
+ |  To do: Write some es6, run it though babel, and eliminate jquery!\\*
+    mix.babel([
+       'public/js/admin.js',
+       'public/js/dashboard.js'
+    ], 'public/js/all.js');
  */
