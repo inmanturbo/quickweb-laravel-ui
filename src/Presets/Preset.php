@@ -87,6 +87,7 @@ class Preset extends LaravelUiPreset
         protected static function updateViews()
     {
         copy(__DIR__ . '/stubs/main.blade.php.stub', resource_path('views/main.blade.php'));
+        copy(__DIR__ . '/stubs/dev.blade.php.stub', resource_path('views/dev.blade.php'));
     }
 
     protected static function updateMix()
