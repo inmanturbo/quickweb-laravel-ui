@@ -55,6 +55,11 @@ $colors:(
             
             }
         }
+        
+         /*
+         |Content displayed to the right of sidebar
+         |
+         */
         .content{
             
             width:100%;
@@ -111,6 +116,11 @@ $colors:(
 
                 }
             }
+            
+            /*
+            |Content displayed to the right of sidebar
+            |
+            */
             .content {
                 
                 margin-left: rem(50px);
@@ -143,6 +153,10 @@ $colors:(
 
                 }
 
+                /*
+                |Content displayed to the right of sidebar
+                |
+                */
                 .content{
     
                     margin-left: rem(200px);
