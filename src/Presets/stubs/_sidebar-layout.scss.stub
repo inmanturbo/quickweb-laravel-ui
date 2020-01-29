@@ -49,7 +49,9 @@ $colors:(
             a {
                 &:hover,
                 &.active{
-                    background-color: gainsboro;
+         
+                    background-color: rgb(235, 232, 232);
+
                 }
                 
             
