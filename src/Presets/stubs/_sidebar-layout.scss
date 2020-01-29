@@ -22,7 +22,7 @@ $colors:(
     }
     
      /*
-     |Mobile first. Larger media starts at line 76
+     |Mobile first. Larger media starts at line 85
      |
      */
     .wrapper{
@@ -78,6 +78,10 @@ $colors:(
     }
 
 
+    /*
+    |Large media. Desktop, etc.
+    |
+    */
     @media(min-width:992px){
 
         .wrapper {
