@@ -80,6 +80,7 @@ class Preset extends LaravelUiPreset
     protected static function updateSass()
     {
         copy(__DIR__ . '/stubs/_variables.scss.stub', resource_path('sass/_variables.scss'));
+        copy(__DIR__ . '/stubs/_sidebar-layout.scss.stub', resource_path('sass/_sidebar-layout.scss'));
         copy(__DIR__ . '/stubs/bootstrap.scss.stub', resource_path('sass/bootstrap.scss'));
         copy(__DIR__ . '/stubs/materialize.scss.stub', resource_path('sass/materialize.scss'));
     }
