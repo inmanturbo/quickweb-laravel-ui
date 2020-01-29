@@ -3,16 +3,16 @@
     // Fonts
     @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-    // Variables
+    
     
     
     // Bootstrap
     @import '~bootstrap/scss/bootstrap';
     
-    
+    // Variables
     @import 'variables';
 }
-
+// Sidebar
 @import 'sidebar-layout';
 
     .d-flex {
