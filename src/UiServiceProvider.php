@@ -16,6 +16,12 @@ class UiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                UiCommand::class,
+            ]);
+        }
+
 
         PresetCommand::macro('quickweb-bootstrap', function ($command) {
 
