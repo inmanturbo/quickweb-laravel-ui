@@ -36,6 +36,16 @@ $colors:(
             transition: all ease $easeTime;
             transform:  translateX(-100%);
             z-index:  2000;
+
+ 
+            a {
+                &:hover,
+                &.active{
+                    background-color: lightgray;
+                }
+                
+            
+            }
         }
         .content{
             width:100%;
@@ -153,15 +163,19 @@ $colors:(
 
         .text{
             font-size: rem(14px);
-            @extend .text-mattGray;
+            // @extend .text-mattGray;
+            color: #212121;
         }
 
         &:hover,
         &.active {
-            .icon,.text{
+            .icon{
                 @extend .text-mattRed;
+                
             }
         }
+
+        
 
     }
 
