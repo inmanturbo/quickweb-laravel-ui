@@ -10,7 +10,6 @@ $colors:(
     "mattBlackDark": "#212121",
     "mattGray":      "#878d8d",
     "mattRed":       "#ec6271"
-
 );
 
 @each $colorName, $colorValue in $colors{
@@ -21,12 +20,21 @@ $colors:(
     .text-#{$colorName}{
         color: #{$colorValue};
     }
-
+    
+     /*
+     |Mobile first. Larger media starts at line 76
+     |
+     */
     .wrapper{
 
         margin-top:rem($margin-top);
 
+        /*
+        |When the sideMenuToggler is unclicked
+        |
+        */
         .sideMenu{
+            
             position:fixed;
             top:0;
             bottom: 0;
@@ -48,12 +56,20 @@ $colors:(
             }
         }
         .content{
+            
             width:100%;
             margin-left: rem(0px);
             transition: all ease $easeTime;
         }
+        
+        /*
+        |When the sideMenuToggler is clicked
+        |
+        */
         &.active{
+            
             .sideMenu{
+                
                 transform: translateX(0);
                 box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
             }
@@ -66,25 +82,40 @@ $colors:(
 
         .wrapper {
 
+            /*
+            |When the sideMenuToggler is unclicked
+            |
+            */
             .sideMenu{
+                
                 transform: translateX(0);
                 width: rem(50px);
                 background-color: transparent;
+                
                 .nav-link{
+                    
                     text-align: center;
+                    
                     .icon{
+                        
                         margin-right: 0;
                     }
                     .text{
+                        
                         display: none;
                     }
 
                 }
             }
             .content {
+                
                 margin-left: rem(50px);
             }
 
+            /*
+            |When the sideMenuToggler is clicked
+            |
+            */
             &.active{
 
                 .sideMenu{
@@ -98,9 +129,11 @@ $colors:(
                     text-align: left;
 
                     .icon{
+                        
                         margin-right: 0;
                     }
                     .text{
+                        
                         display: inline !important;
                     }
 
@@ -114,17 +147,19 @@ $colors:(
  
             }
 
+            /* 
+            |When you hover over the sideMenu and the
+            |sideMenuToggler is unclicked
+            |
+            */
             &.mouseable{
 
                 &.activated{
-
-                    
+              
                     .sideMenu{
                         
                         background-color: #fff !important;
-
                         width: rem(200px); 
-
                         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
                     }
     
@@ -133,9 +168,11 @@ $colors:(
                         text-align: left;
     
                         .icon{
+                            
                             margin-right: 0;
                         }
                         .text{
+                            
                             display: inline !important;
                         }
     
@@ -147,9 +184,12 @@ $colors:(
     }
 
     .nav-link{
+        
         display: block;
         white-space: nowrap;
+        
         .icon {
+            
             margin-right: rem(2px);
             font-size: rem(20px);
             vertical-align: middle;
@@ -162,22 +202,18 @@ $colors:(
         }
 
         .text{
+            
             font-size: rem(14px);
-            // @extend .text-mattGray;
             color: #212121;
         }
 
         &:hover,
         &.active {
+            
             .icon{
-                @extend .text-mattRed;
                 
+                @extend .text-mattRed;        
             }
         }
-
-        
-
     }
-
-
-}
+} // end color map loop
