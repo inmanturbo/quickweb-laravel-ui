@@ -38,8 +38,8 @@ mix.copyDirectory("node_modules/datatables.net-select", publicPath + "vendor/dat
 mix.copyDirectory("vendor/ckeditor", publicPath + "vendor/ckeditor");
 
 /*
-|
-| 
+|fontawesome-free, ,aterial-icons
+|icon fonts 
 \/\/\/\/ icon fonts \/\/\/\/\/ \\*
 mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
 mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
