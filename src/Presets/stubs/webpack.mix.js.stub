@@ -30,7 +30,21 @@ mix.copyDirectory("node_modules/datatables.net-rowgroup", publicPath + "vendor/d
 mix.copyDirectory("node_modules/datatables.net-scroller", publicPath + "vendor/datatables.net-scroller");
 mix.copyDirectory("node_modules/datatables.net-searchpanes", publicPath + "vendor/datatables.net-searchpanes");
 mix.copyDirectory("node_modules/datatables.net-select", publicPath + "vendor/datatables.net-select");
-*/
+//*/
+/*
+|
+| ckeditor
+\/\/\/\/ ckeditor \/\/\/\/\/ \\*
+mix.copyDirectory("vendor/ckeditor", publicPath + "vendor/ckeditor");
+
+/*
+|
+| 
+\/\/\/\/ icon fonts \/\/\/\/\/ \\*
+mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
+mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
+
+
 /*
 |
 | jquery plugins
@@ -41,31 +55,21 @@ mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "vendor/jquery-co
 mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "vendor/jquery-contexmenu");
 mix.copyDirectory("node_modules/jquery-slimscroll", publicPath + "vendor/jquery-slimscroll");
 
-/*
-|
-| ckeditor
-*/
-mix.copyDirectory("vendor/ckeditor", publicPath + "vendor/ckeditor");
 
-/*
-|
-| icon fonts
-*/
-mix.copyDirectory("node_modules/@fortawesome/fontawesome-free/", publicPath + "css/icons/font-awesome");
-mix.copyDirectory("node_modules/material-icons/iconfont", publicPath + "css/icons/material-icons");
 
 /*
 |
 | Common (Bootstrap, Materialize, jquery :-/ fontawesome material icon js)
 */
 mix.js(jsArr, 'js')
-    .sass('resources/sass/materialize.scss', 'css')
-    .sass('resources/sass/bootstrap.scss', 'css');
-    
- /*
- |  To do: Write some es6, run it though babel, and eliminate jquery!\\*
-    mix.babel([
-       'public/js/admin.js',
-       'public/js/dashboard.js'
-    ], 'public/js/all.js');
- */
+   .sass('resources/sass/materialize.scss', 'css')
+   .sass('resources/sass/bootstrap.scss', 'css');
+
+/*
+|  To do: Write some es6, run it though babel, and eliminate jquery!\\*
+   mix.babel([
+      'public/js/admin.js',
+      'public/js/dashboard.js'
+   ], 'public/js/all.js');
+*/
+
