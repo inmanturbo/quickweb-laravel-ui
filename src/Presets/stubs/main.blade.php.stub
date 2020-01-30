@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,242 +10,263 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="{{ asset('vendor/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
-    
-        <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    
-        <!-- Styles -->
-        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/icons/material-icons/material-icons.css') }}" rel="stylesheet">
-        
-        <!-- Styles and scripts from other views -->
-        @yield('head')
-   
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('vendor/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/icons/material-icons/material-icons.css') }}" rel="stylesheet">
+
+    <!-- Styles and scripts from other views -->
+    @yield('head')
+
 </head>
+
 <body>
-<!--- begin bootstrap4 --->
-        <div class="bstrap4-iso">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="#" id="sideMenuToggler"  class="sideMenuToggler" >
-                    <span class="navbar-toggler-icon"></span>
-                </a>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
+    <!--- begin bootstrap4 --->
+    <div class="bstrap4-iso">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a href="#" id="sideMenuToggler" class="sideMenuToggler">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-            
-                      <a 
-                      class="nav-link dropdown-toggle" 
-                      href="#" id="navbarDropdown" 
-                      role="button" 
-                      data-toggle="dropdown" 
-                      aria-haspopup="true" 
-                      aria-expanded="false"
-                      >
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
-        
-                  </ul>
-                </div>
-              </nav>
-        </div>
-<!--- end bootstrap4. All bootstrap below are just borrowed, cherry picked classes. See resources/scss/variables.css Webpack is loading bootrap inside a dedicated class (.bstrap4-iso)  :-) --->
-              <div class="wrapper d-flex mouseable">
-                  <div class="sideMenu bg-white">
-                      <!-- sidebar now using bootstrap since we are able to isolate it from our content ;-) -->
-                    <div class="bstrap4-iso">
-                    <div class="sidebar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="icon material-icons">
-                                        dashboard
-                                    </i>
-                                        <span class="text">
-                                            dashboard
-                                        </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="icon material-icons">
-                                        person
-                                    </i>
-                                        <span class="text">
-                                            User Profile
-                                        </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="icon material-icons">
-                                        insert_chart
-                                    </i>
-                                    <span class="text">
-                                        Chart
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class=" icon material-icons">
-                                        settings
-                                    </i>
-                                    <span class="text">
-                                        settings
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="icon material-icons">
-                                        computer
-                                    </i>
-                                    <span class="text">
-                                        Demo
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <!-- end bootstrap4  styles -->
-                </div>
-                  <div class="content">
-                      <main>
-           
-                          <!--- content from other views will load here --->
-                            @yield('main')
-                      
-                       
-                      </main>
-                    </div>
-                  </div>
-         
-</div>
- 
+
+                </ul>
+            </div>
+        </nav>
     </div>
-<script>
+    <!--- End bootstrap4. All bootstrap below are just borrowed, cherry picked classes.
+      See resources/scss/variables.css Webpack is loading bootstrap inside a
+      dedicated parent class (.bstrap4-iso)  :-) --->
 
-    /*
-    |jquery is bundled into public/js/app.js
-    |see the boostrapping script in resources/js/app.js||resources/js/bootstrap.js
-    | https://api.jquery.com/
-    */
-    $(document).ready(function () {
-    
+    <div class="wrapper d-flex mouseable">
+        <div class="sideMenu bg-white">
+
+            <!-- sidebar now using bootstrap since we
+                           are able to isolate it from our
+                           content ;-) -->
+
+            <div class="bstrap4-iso">
+                <div class="sidebar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icon material-icons">
+                                    dashboard
+                                </i>
+                                <span class="text">
+                                    dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icon material-icons">
+                                    person
+                                </i>
+                                <span class="text">
+                                    User Profile
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icon material-icons">
+                                    insert_chart
+                                </i>
+                                <span class="text">
+                                    Chart
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class=" icon material-icons">
+                                    settings
+                                </i>
+                                <span class="text">
+                                    settings
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="icon material-icons">
+                                    computer
+                                </i>
+                                <span class="text">
+                                    Demo
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bootstrap4  styles -->
+        </div>
+        <div class="content">
+            <main>
+
+                <!--- content from other views will load here --->
+                @yield('main')
+
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+
         /*
-        | Check if sidebar was expanded on last page visit
-        | and if so, set up a function to click the sideMenuToggler
-        | and reactivate it:
         |
-        |  https://www.w3schools.com/html/html5_webstorage.asp
+        | jquery is bundled into public/js/app.js see the
+        | boostrapping script in resources/js/app.js||
+        | resources/js/bootstrap.js
+        | https://api.jquery.com/
         |
         */
-        var checkSidebarState = function(){
+        $(document).ready(function () {
 
-            console.log(localStorage.sidebarActive);
+            /*
+            |-------------------------------------------------------
+            | https://www.w3schools.com/html/html5_webstorage.asp
+            |-------------------------------------------------------
+            |
+            | Check if sidebar was expanded on last page visit
+            | and if so, set up a function to click the
+            | sideMenuToggler and reactivate it
+            |
+            */
+            var checkSidebarState = function () {
 
-            if(localStorage.sidebarActive == "on"){
+                console.log(localStorage.sidebarActive);
 
-                $("#sideMenuToggler").click();
+                if (localStorage.sidebarActive == "on") {
+
+                    $("#sideMenuToggler").click();
+                }
             }
-        }
 
-       /*
-        |Add slim scroll to sidebar 
-        | https://plugins.jquery.com/slimScroll/
-       */
-        var adjustSidebar = function() {
-            $(".sidebar").slimScroll({
-                height:document.documentElement.clientHeight - $(".navbar").outerHeight()
-            });
-        }
-        
-       /*
-        | fire the slimscroll function
-        | https://plugins.jquery.com/slimScroll/
-       */
-        adjustSidebar();
-        
-       /*
-        | fire the slimscroll function on windows resize
-        | https://plugins.jquery.com/slimScroll/
-       */
-       $(window).resize(function(){
+            /*
+             |-------------------------------------------
+             |https://plugins.jquery.com/slimScroll/
+             |-------------------------------------------
+             |
+             |Add slim scroll to sidebar
+            */
+            var adjustSidebar = function () {
+                $(".sidebar").slimScroll({
+                    height: document.documentElement.clientHeight - $(".navbar").outerHeight()
+                });
+            }
+
+            /*
+             |------------------------------------------
+             |https://plugins.jquery.com/slimScroll/
+             |------------------------------------------
+             |
+             | fire the slimscroll function
+            */
             adjustSidebar();
-       });
-       
-        
-        /*
-        | Toggle sidebar on click
-        | 
-        | resources/scss/bootstrap.scss
-        */
-        $(".sideMenuToggler").on("click",function(){     
+
+            /*
+             |-----------------------------------------
+             |https://plugins.jquery.com/slimScroll/
+             | ----------------------------------------
+             |
+             | fire the slimscroll function on window resize
+            */
+            $(window).resize(function () {
+                adjustSidebar();
+            });
+
+
+            /*
+            |---------------------------------
+            | resources/scss/bootstrap.scss
+            | --------------------------------
+            |
+            | Toggle sidebar on click
+            */
+            $(".sideMenuToggler").on("click", function () {
                 $(".wrapper").toggleClass("active").toggleClass("mouseable");
 
-                if($(".wrapper").hasClass("active")){
+                if ($(".wrapper").hasClass("active")) {
 
                     localStorage.setItem("sidebarActive", "on");
-                }else{
+                } else {
                     localStorage.setItem("sidebarActive", "off");
                 }
-        });
+            });
+
+            /*
+            |-------------------------------------------------------
+            | https://www.w3schools.com/html/html5_webstorage.asp
+            |------------------------------------------------------
+            |  Fire our sidebar checker now that its
+            |  dependencies are in place
+            */
+            checkSidebarState();
+
+
+            /*
+            |-------------------------------
+            |resources/scss/bootstrap.scss
+            |-------------------------------
+            |Toggle sidebar on hover
+            |and give it a shadow
+            |let it overlap page
+            |
+            */
+            $(".sidebar").on("mouseenter", function () {
+
+                $(".wrapper").toggleClass("activated");
+
+            });
+            $(".sidebar").on("mouseleave", function () {
+
+                $(".wrapper").toggleClass("activated");
+
+
+
+            });
+
+
+        });// end document ready function 
 
         /*
-        | Fire our sidebar checker  now that its dependencies are in place
-        |
-        |  https://www.w3schools.com/html/html5_webstorage.asp
-        |
+        |scripts from other views 
+        |will load below
         */
-        checkSidebarState();
-
-
-        /*
-        | Toggle sidebar on hover
-        | and give it a shadow
-        | let it overlap page
-        | resources/scss/bootstrap.scss
-        */
-        $(".sidebar").on("mouseenter",function(){
- 
-                $(".wrapper").toggleClass("activated");
-        
-        });
-        $(".sidebar").on("mouseleave",function(){
-
-                $(".wrapper").toggleClass("activated");
-        
-               
-
-        });
-        
-
-    });// end document ready function 
-    
-    /*
-    |scripts from other views 
-    |will load below
-    */
-    @yield('scripts')
-</script>
+        @yield('scripts')
+    </script>
 
 
 </body>
+
 </html>

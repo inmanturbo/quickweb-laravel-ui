@@ -21,6 +21,10 @@ class Preset extends LaravelUiPreset
         static::updateViews();
     }
 
+    /**
+     * @param array $packages
+     * @return array
+     */
     protected static function updatePackageArray(array $packages)
     {
         return [
@@ -84,18 +88,27 @@ class Preset extends LaravelUiPreset
         copy(__DIR__ . '/stubs/bootstrap.scss.stub', resource_path('sass/bootstrap.scss'));
         copy(__DIR__ . '/stubs/materialize.scss.stub', resource_path('sass/materialize.scss'));
     }
-    
-        protected static function updateViews()
+
+    /**
+     *Update the views files for the application.
+     */
+    protected static function updateViews()
     {
         copy(__DIR__ . '/stubs/main.blade.php.stub', resource_path('views/main.blade.php'));
         copy(__DIR__ . '/stubs/dev.blade.php.stub', resource_path('views/dev.blade.php'));
     }
 
+    /**
+     * Update webpack mix.
+     */
     protected static function updateMix()
     {
         copy(__DIR__ . '/stubs/webpack.mix.js.stub', base_path('webpack.mix.js'));
     }
 
+    /**
+     * Update javascript files for the application
+     */
     protected static function updateScripts()
     {
         copy(__DIR__ . '/stubs/app.js.stub', resource_path('js/app.js'));
