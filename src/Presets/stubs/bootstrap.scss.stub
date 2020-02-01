@@ -15,6 +15,9 @@
 // Sidebar
 @import 'sidebar-layout';
 
+// Topbar
+@import 'top-bar';
+
     .d-flex {
         display: -ms-flexbox !important;
         display: flex !important;
