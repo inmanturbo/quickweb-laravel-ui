@@ -1,0 +1,38 @@
+
+    .top-bar{
+
+        .nav-link{
+            
+            display: block;
+            white-space: nowrap;
+            padding: 0;
+        
+            .icon {
+                
+                font-size: rem(24px);
+                vertical-align: text-bottom;
+                height: rem(32px);
+                width: rem(32px);
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text{
+                
+                font-size: rem(14px);
+                color: #212121;
+            }
+
+            &:hover,
+            &.active {
+
+                .top-nav-text,
+                .icon
+                {
+                    
+                    color:  #ec6271;       
+                }
+            }
+        }
+    }
