@@ -100,7 +100,7 @@ $colors:(
             .sideMenu{
                 
                 transform: translateX(0);
-                width: rem(50px);
+                width: rem(10px);
                 background-color: transparent;
                 
                 .nav-link{
