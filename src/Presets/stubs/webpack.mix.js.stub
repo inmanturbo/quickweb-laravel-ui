@@ -54,6 +54,7 @@ mix.copyDirectory("node_modules/select2", publicPath + "vendor/select2");
 mix.copyDirectory("node_modules/jquery-colorbox", publicPath + "vendor/jquery-colorbox");
 mix.copyDirectory("node_modules/jquery-contextmenu", publicPath + "vendor/jquery-contexmenu");
 mix.copyDirectory("node_modules/jquery-slimscroll", publicPath + "vendor/jquery-slimscroll");
+mix.copyDirectory("node_modules/fontawesome-iconpicker", publicPath + "vendor/fontawesome-iconpicker");
 
 
 
