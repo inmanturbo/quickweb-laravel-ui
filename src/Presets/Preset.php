@@ -73,6 +73,7 @@ class Preset extends LaravelUiPreset
             'datatables.net-select' => '^1.3.1',
             'datatables.net-select-dt' => '^1.3.1',
             'datatables.net-select-bs4' => '^1.3.1',
+            'fontawesome-iconpicker' => '^3.2.0',
         ] + $packages;
     }
 
