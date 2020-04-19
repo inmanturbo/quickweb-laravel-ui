@@ -28,7 +28,7 @@
         }
     },
     "require": {
-        "laravel/ui": "^1.1",
+        "laravel/ui": "1.*||2.*",
         "ckeditor/ckeditor": "^4.13"
     },
     "require-dev": {
